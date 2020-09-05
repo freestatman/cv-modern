@@ -1,0 +1,44 @@
+- layout: left
+  company: Manager, Data Science
+  link:
+  job_title: Biostat Solutions, Inc
+  dates: Jan 2020 - Present
+  quote: >
+      Service mindset at the heart; Operational excellence
+  description: | # this will include new lines to allow paragraphs
+
+- layout: left
+  company: Senior Statistician III
+  link:
+  job_title: Biostat Solutions, Inc
+  dates: Nov 2018 - Jan 2020
+  quote: >
+      Service mindset at the heart; Operational excellence
+  description: | # this will include new lines to allow paragraphs
+
+- layout: left
+  company: Senior Statistician II
+  link:
+  job_title: Biostat Solutions, Inc
+  dates: Nov 2017 - Nov 2018
+  quote: >
+      Service mindset at the heart; Operational excellence
+  description: | # this will include new lines to allow paragraphs
+
+- layout: left
+  company: Senior Statistical Analyst
+  link:
+  job_title: Biostat Solutions, Inc
+  dates: Nov 2014 - Nov 2017
+  quote: >
+      Service mindset at the heart; Operational excellence
+  description: | # this will include new lines to allow paragraphs
+
+- layout: left
+  company: Statistical Analyst
+  link:
+  job_title: Biostat Solutions, Inc
+  dates: Feb 2013 - Nov 2014
+  quote: >
+      Service mindset at the heart; Operational excellence
+  description: | # this will include new lines to allow paragraphs

@@ -1,0 +1,55 @@
+# Site
+repository: freestatman/freestatman.github.io
+favicon: images/favicon.ico
+
+# Personal info
+name: Freeman Wang
+title: Data Science Manager
+email: freestatman@gmail.com
+website: http://freestatman.github.io/
+
+# Social links
+twitter_username: freestatman
+github_username:  freestatman
+linkedin_username: shuaicheng-freeman-wang-4157ba23
+
+# About Section
+# about_title: About Me
+about_profile_image: images/twitter_profile.jpeg
+about_content: | # this will include new lines to allow paragraphs
+  I'm a Data Science Manager at a CRO company in pharmaceutical space, and I lead a team to build production-grade Shiny apps and data science solutions, to enable the deep interrogate clinical trial data, biomarker data, and genomic/transcriptomic data. My work delivers better decision recommendations for my clients and the patients we ultimately serve.
+  I'm a full-stack genomic & biomarker <mark>statistician</mark>, <mark>R/Shiny developer</mark>, <mark>machine learning engineer</mark>, visualization designer, and bioinformatician.
+  I have eight years of statistical consulting experience in industry, and the collaborative service mind-set is deep in my heart.
+  I specialize in R/Shiny development, precision medicine, ML, statistical genetics, and big and complex data processing.
+  Therapeutic areas include Diabetes, CNS, Gastroenterology, Oncology, and Immunology.
+
+  I am most skilled in: <mark>R/Shiny</mark> and <mark>Visualization</mark>, and <mark>ML</mark>.
+
+# Experience Section
+# experience_title: Experience
+
+# Projects Section
+# projects_title: Projects
+
+# Education Section
+# education_title: Education
+
+# More Section
+# more_title: A Little More About Me
+more_content: | # this will include new lines to allow paragraphs
+  Alongside my interests in /#rstats, some of my other interests and hobbies are:
+   - Running and hiking
+   - Spending time with my dog
+
+# Footer
+footer_show_references: true
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
