@@ -1,29 +1,42 @@
 - layout: left
-  company: Manager, Data Science
+  company: Director, Data Science
   link:
   job_title: Biostat Solutions, Inc
-  dates: Jan 2020 - Present
+  dates: Feb 2021 - Present
   quote: >
       Service mindset at the heart; Operational excellence
   description: | # this will include new lines to allow paragraphs
+    * Function as a subject matter expert in service area(s) of R/Shiny, Machine Learning, Visualization, Transcriptomic data analysis
+    * Provide strategic input and analytical support to clients
+    * Perform business development activities in service area(s) of interest
+    * Oversee scientific and operational aspects of client projects
+
+- layout: left
+  company: Manager, Data Science
+  link:
+  job_title: Biostat Solutions, Inc
+  dates: Jan 2020 - Feb 2021
+  quote: >
+      Service mindset at the heart; Operational excellence
+  description: | # this will include new lines to allow paragraphs
+    * Serve as project lead
+    * Develop scope and cost estimates, allocate resources, and lead project teams to complete projects according to quality assurance, timeline, and budget requirements
+    * Lead Advanced Analytics Services & Data Sciences service area
+    * R/Shiny technology evangelist
+    * Lead a team of data scientist, statistician, and statistical specialist
 
 - layout: left
   company: Senior Statistician III
   link:
   job_title: Biostat Solutions, Inc
-  dates: Nov 2018 - Jan 2020
+  dates: Nov 2017 - Jan 2020
   quote: >
       Service mindset at the heart; Operational excellence
   description: | # this will include new lines to allow paragraphs
-
-- layout: left
-  company: Senior Statistician II
-  link:
-  job_title: Biostat Solutions, Inc
-  dates: Nov 2017 - Nov 2018
-  quote: >
-      Service mindset at the heart; Operational excellence
-  description: | # this will include new lines to allow paragraphs
+    * Lead projects independently
+    * Develop production-grade Shiny application solutions
+    * Develop interactive visualization dashboard for story telling of clinical trial, transcriptomic and RWE data
+    * R/Shiny/Linux/ML trainer
 
 - layout: left
   company: Senior Statistical Analyst
@@ -31,7 +44,7 @@
   job_title: Biostat Solutions, Inc
   dates: Nov 2014 - Nov 2017
   quote: >
-      Service mindset at the heart; Operational excellence
+      Continuous learning is a principle 
   description: | # this will include new lines to allow paragraphs
 
 - layout: left
@@ -40,5 +53,5 @@
   job_title: Biostat Solutions, Inc
   dates: Feb 2013 - Nov 2014
   quote: >
-      Service mindset at the heart; Operational excellence
+      Continuous learning is a principle 
   description: | # this will include new lines to allow paragraphs

@@ -1,8 +1,10 @@
 - layout: top-middle
-  name: Super awesome project
-  link: github.com/sproogen
-  github: sproogen/resume-theme
+  name: (Open Source) ideogRam an R htmlwidget package
+  link: github.com/freestatman/ideogRam
+  github: freestatman/ideogRam
   quote: >
-    This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+
   description: | # this will include new lines to allow paragraphs
-    I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+    This project aims to provide an R interface to Ideogram.js, integrate it with bioconductor infrastructures and possibly provide an interactive whole-genome exploring tool combining with other visualization components.
+
+    Ideogram.js is a JavaScript library for chromosome visualization. It can be used for interactive visualization of chromosomes of different species, showing cytobands, showing annotations along the chromosomes, showing position mapping (e.g. homology) between different chromosomes, etc.
