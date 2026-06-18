@@ -1,6 +1,4 @@
----
-layout: null
----
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,6 +57,20 @@ layout: null
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    /* Container for brand logo and profile photo */
+    .brand-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .profile-photo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
     header h1 {
@@ -343,7 +355,10 @@ layout: null
 <body>
 
   <header>
-    <h1><a href="https://freestatman.github.io/cv-modern/" class="brand">Freeman Wang</a></h1>
+    <div class="brand-container">
+      <img src="images/twitter_profile.jpeg" alt="Profile Photo" class="profile-photo" />
+      <h1><a href="https://freestatman.github.io/cv-modern/" class="brand">Freeman Wang</a></h1>
+    </div>
     <nav>
       <a href="https://github.com/freestatman" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/shuaicheng-freeman-wang-4157ba23" target="_blank" rel="noopener">LinkedIn</a>
@@ -358,7 +373,7 @@ layout: null
 
       <p>With over a decade of statistical consulting experience in the pharmaceutical and biotechnology industries, my expertise spans full-stack R/Shiny development, biostatistics, machine learning, and computational biology. I am passionate about modern software development practices, LLM/agentic engineering, modern dashboards, and reproducible research in pharmaceutical and life sciences communities.</p>
 
-      <p>Even in the age of AI, Neovim and tmux remain my home of productivity (now augmented by agent harnesses).</p>
+      <p>Even in the age of AI, Neovim and TMUX remain my home of productivity (now augmented by agent harnesses).</p>
     </div>
 
     <div class="tabs-container">
