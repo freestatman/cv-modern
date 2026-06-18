@@ -1,0 +1,567 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Freeman Wang | R Shiny Development Lead</title>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Personal website of Freeman Wang, R Shiny Development Lead at Sanofi.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Freeman Wang">
+  <meta property="og:url" content="https://freestatman.github.io/cv-modern/">
+  <meta property="og:title" content="Freeman Wang | R Shiny Development Lead">
+  <meta property="og:description" content="Personal website of Freeman Wang, R Shiny Development Lead at Sanofi.">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@freestatman">
+  <meta name="twitter:title" content="Freeman Wang | R Shiny Development Lead">
+  <meta name="twitter:description" content="Personal website of Freeman Wang, R Shiny Development Lead at Sanofi.">
+
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <style>
+    :root {
+      --bg-paper: #fdfdfd;
+      --text-ink: #1c1c1c;
+      --text-accent: #991b1b;
+      --text-muted: #52525b;
+      --border-color: #e4e4e7;
+      --max-width: 69ch;
+    }
+
+    body {
+      background-color: var(--bg-paper);
+      color: var(--text-ink);
+      font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    header {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 1rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.875rem;
+      letter-spacing: 0.025em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 0.875rem;
+      font-weight: 550;
+      margin: 0;
+      line-height: 1;
+    }
+
+    header a.brand {
+      color: var(--text-ink);
+      text-decoration: none;
+      transition: color 0.15s ease-in-out;
+    }
+
+    header a.brand:hover {
+      color: var(--text-accent);
+    }
+
+    header nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    header nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s ease-in-out;
+    }
+
+    header nav a:hover {
+      color: var(--text-ink);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 2rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .intro {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      margin-bottom: 3rem;
+    }
+
+    .intro p {
+      margin-bottom: 1.5rem;
+      margin-top: 0;
+    }
+
+    .intro a {
+      color: var(--text-ink);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+      transition: text-decoration-color 0.15s, color 0.15s;
+    }
+
+    .intro a:hover {
+      color: var(--text-accent);
+      text-decoration-color: var(--text-accent);
+    }
+
+    h2 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+
+    .section-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .section-list li {
+      margin-bottom: 1.75rem;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+
+    .item-title {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 550;
+      font-size: 1rem;
+    }
+
+    .item-title a {
+      color: var(--text-ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .item-title a:hover {
+      color: var(--text-accent);
+    }
+
+    .item-subtitle {
+      font-style: italic;
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .item-date {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .item-desc {
+      font-size: 0.9375rem;
+      margin-top: 0.35rem;
+      color: #27272a;
+    }
+
+    .item-desc ul {
+      padding-left: 1.2rem;
+      margin: 0.35rem 0 0 0;
+    }
+
+    .item-desc li {
+      margin-bottom: 0.35rem;
+    }
+
+    .links {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.8125rem;
+      margin-top: 0.35rem;
+    }
+
+    .links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-right: 0.75rem;
+      transition: color 0.15s;
+    }
+
+    .links a:hover {
+      color: var(--text-accent);
+    }
+
+    .subitem {
+      margin-top: 1.25rem;
+    }
+
+    .subitem-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.125rem;
+    }
+
+    .subitem-title {
+      font-style: italic;
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+    }
+
+    .subitem-date {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .tabs-container {
+      border-bottom: 1px solid var(--border-color);
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 0.5rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-ink);
+      border-bottom-color: #d4d4d8;
+    }
+
+    .tab-btn.active {
+      color: var(--text-ink);
+      border-bottom-color: var(--text-accent);
+      font-weight: 600;
+    }
+
+    .tab-icon {
+      color: var(--text-muted);
+      transition: color 0.15s;
+    }
+
+    .tab-btn:hover .tab-icon,
+    .tab-btn.active .tab-icon {
+      color: var(--text-ink);
+    }
+
+    .tab-content {
+      display: block;
+    }
+
+    .tab-content.hidden {
+      display: none;
+    }
+
+    footer {
+      margin-top: 6rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      letter-spacing: 0.025em;
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 0.5rem;
+      transition: color 0.15s;
+    }
+
+    footer a:hover {
+      color: var(--text-accent);
+    }
+
+    @media (max-width: 640px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 2rem 1rem 1rem;
+      }
+      header nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      main {
+        padding: 0 1rem;
+        margin-top: 1.5rem;
+      }
+      .item-header, .subitem-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.125rem;
+      }
+      .item-date {
+        margin-top: 0.125rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="https://freestatman.github.io/cv-modern/" class="brand">Freeman Wang</a></h1>
+    <nav>
+      <a href="https://github.com/freestatman" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/shuaicheng-freeman-wang-4157ba23" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:freestatman@gmail.com">Email</a>
+      <a href="https://twitter.com/freestatman" target="_blank" rel="noopener">Twitter</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <p>I am an <strong>R Shiny Development Lead</strong> at <a href="https://www.sanofi.com/" target="_blank" rel="noopener">Sanofi</a>, where I design and build production-grade R/Shiny software and interactive visualization solutions to scale up dashboards for clinical exploration and regulatory submission.</p>
+
+      <p>With over a decade of statistical consulting experience in the pharmaceutical and biotechnology industries, my expertise spans full-stack R/Shiny development, biostatistics, machine learning, and computational biology. I am passionate about modern software development practices, LLM/agentic engineering, modern dashboards, and reproducible research in pharmaceutical and life sciences communities.</p>
+
+      <p>Even in the age of AI, Neovim and tmux remain my home of productivity (now augmented by agent harnesses).</p>
+    </div>
+
+    <div class="tabs-container">
+      <button class="tab-btn active" data-target="experience">
+        <svg class="tab-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+          <path d="M1.75 2.5A1.75 1.75 0 0 0 0 4.25v6.5C0 11.716.784 12.5 1.75 12.5h12.5A1.75 1.75 0 0 0 16 10.75v-6.5A1.75 1.75 0 0 0 14.25 2.5H1.75zM1.5 4.25c0-.138.112-.25.25-.25h12.5c.138 0 .25.112.25.25v6.5c0 .138-.112.25-.25.25H1.75a.25.25 0 0 1-.25-.25v-6.5z"/>
+          <path d="M5.5 1.75c0-.138.112-.25.25-.25h4.5c.138 0 .25.112.25.25v1.5a.75.75 0 0 1-1.5 0V3H6.75v.25a.75.75 0 0 1-1.5 0v-1.5z"/>
+        </svg>
+        Experience
+      </button>
+      <button class="tab-btn" data-target="projects">
+        <svg class="tab-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+          <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 0 1 1-1h8z"/>
+        </svg>
+        Projects & Software
+      </button>
+      <button class="tab-btn" data-target="education">
+        <svg class="tab-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+          <path d="M8 1.135 1.5 4.5 8 7.865l5.5-2.853v2.738a.75.75 0 0 0 1.5 0V4.5L8 1.135zM2.871 5 8 2.333 13.129 5 8 7.667 2.871 5z"/>
+          <path d="m13 8.354-4.5 2.333a1.003 1.003 0 0 1-1 0L3 8.354v2.771c0 .408.249.778.63 1l4.5 2.333a1.003 1.003 0 0 0 1 0l4.5-2.333c.381-.222.63-.592.63-1V8.354z"/>
+        </svg>
+        Education
+      </button>
+    </div>
+
+      <!-- Projects & Software Tab Content -->
+      <div id="tab-projects" class="tab-content hidden">
+        <section id="software" style="margin-top: 1rem;">
+          <ul class="section-list">
+            <li>
+              <div class="item-header">
+                <span class="item-title">teal.builder</span>
+                <span class="item-date">Clinical Analytics Framework</span>
+              </div>
+              <div class="item-desc">
+                Contributed to the development of custom Shiny app builders and interactive dashboard frameworks at Sanofi to accelerate exploratory analysis of clinical trial data.
+              </div>
+            </li>
+            <li>
+              <div class="item-header">
+                <span class="item-title">ideogRam</span>
+                <span class="item-date">Open Source R Package</span>
+              </div>
+              <div class="item-desc">
+                An R htmlwidget interface to Ideogram.js for interactive chromosome visualization. It supports biological cytobands, multi-species mapping, annotations, homology alignment, and whole-genome exploratory visualization.
+              </div>
+              <div class="links">
+                <a href="https://github.com/freestatman/ideogRam" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Education Tab Content -->
+    <div id="tab-education" class="tab-content hidden">
+      <section id="education" style="margin-top: 1rem;">
+        <ul class="section-list">
+          <li>
+            <div class="item-header">
+              <span class="item-title">Michigan Technological University</span>
+              <span class="item-date">2009 &ndash; 2013</span>
+            </div>
+            <div class="item-subtitle">M.S. in Mathematics and Statistics</div>
+            <div class="item-desc">Major in Statistical Genetics. Houghton, MI.</div>
+          </li>
+
+          <li>
+            <div class="item-header">
+              <span class="item-title">Hunan University</span>
+              <span class="item-date">2005 &ndash; 2009</span>
+            </div>
+            <div class="item-subtitle">B.S. in Statistics</div>
+            <div class="item-desc">Changsha, China.</div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Experience Tab Content -->
+    <div id="tab-experience" class="tab-content">
+      <section id="experience" style="margin-top: 1rem;">
+        <ul class="section-list">
+          <li>
+            <div class="item-header">
+              <span class="item-title">Sanofi</span>
+              <span class="item-date">Nov 2021 &ndash; Present</span>
+            </div>
+            <div class="item-subtitle">R Shiny Development Lead</div>
+            <div class="item-desc">
+              <ul>
+                <li>Lead design and development of production-grade R/Shiny software and visualization platforms to scale clinical dashboarding.</li>
+                <li>Develop clinical exploration and submission frameworks, including contributions to open-source clinical dashboards like <code>{teal.builder}</code>.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-header">
+              <span class="item-title">PharmaLex (acquired BioStat Solutions)</span>
+              <span class="item-date">Jan 2020 &ndash; Nov 2021</span>
+            </div>
+            <div class="item-subtitle">Director / Manager, Data Science</div>
+            <div class="item-desc">
+              <ul>
+                <li>Functioned as subject matter expert in biostatistics, R/Shiny development, machine learning, visualization, and transcriptomic analysis.</li>
+                <li>Served as project lead managing scope, budgets, resource allocation, and timelines to ensure operational excellence.</li>
+                <li>Led Advanced Analytics Services & Data Sciences service group, mentoring data scientists, statisticians, and specialists.</li>
+                <li>Acted as technology evangelist, pioneering modern R/Shiny development standards.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-header">
+              <span class="item-title">BioStat Solutions, Inc.</span>
+              <span class="item-date">Feb 2013 &ndash; Jan 2020</span>
+            </div>
+
+            <div class="subitem">
+              <div class="subitem-header">
+                <span class="subitem-title">Senior Statistician III</span>
+                <span class="subitem-date">Nov 2017 &ndash; Jan 2020</span>
+              </div>
+              <div class="item-desc">
+                <ul>
+                  <li>Independently led client projects and developed production-ready Shiny applications.</li>
+                  <li>Created interactive visualization dashboards for clinical trials, transcriptomic analyses, and real-world evidence (RWE).</li>
+                  <li>Trained internal teams in R, Shiny, Linux administration, and machine learning workflows.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subitem">
+              <div class="subitem-header">
+                <span class="subitem-title">Senior Statistical Analyst</span>
+                <span class="subitem-date">Nov 2014 &ndash; Nov 2017</span>
+              </div>
+              <div class="item-desc">
+                Led data processing, statistical modeling, and analysis workflows for clinical development studies.
+              </div>
+            </div>
+
+            <div class="subitem">
+              <div class="subitem-header">
+                <span class="subitem-title">Statistical Analyst</span>
+                <span class="subitem-date">Feb 2013 &ndash; Nov 2014</span>
+              </div>
+              <div class="item-desc">
+                Performed statistical analysis and generated reports for genomic and clinical research.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Freeman Wang. Built with simplicity in mind.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      function switchTab(targetId) {
+        tabButtons.forEach(btn => {
+          if (btn.getAttribute("data-target") === targetId) {
+            btn.classList.add("active");
+          } else {
+            btn.classList.remove("active");
+          }
+        });
+        tabContents.forEach(content => {
+          if (content.id === `tab-${targetId}`) {
+            content.classList.remove("hidden");
+          } else {
+            content.classList.add("hidden");
+          }
+        });
+        // Update URL hash without jumping
+        if (history.pushState) {
+          history.pushState(null, null, '#' + targetId);
+        } else {
+          window.location.hash = targetId;
+        }
+      }
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          switchTab(btn.getAttribute("data-target"));
+        });
+      });
+
+      // Handle direct navigation via URL hash
+      const hash = window.location.hash.substring(1);
+      if (hash && (hash === "projects" || hash === "experience" || hash === "education")) {
+        switchTab(hash);
+      }
+    });
+  </script>
+
+</body>
+</html>
